@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "918685966455",
+    "firebase_url": "https://friendlypasswod.firebaseio.com",
+    "project_id": "friendlypasswod",
+    "storage_bucket": "friendlypasswod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918685966455:android:dc33dcd8b1776ccb",
+        "android_client_info": {
+          "package_name": "com.example.demas.friendlypassword"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918685966455-r5onmcqbhbt9tuvhn5lnfqdv8e0mvtid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.demas.friendlypassword",
+            "certificate_hash": "332a27db300546c06e3df8ef4ae9ca25f7c3b8e1"
+          }
+        },
+        {
+          "client_id": "918685966455-8rqdc8msad0u0dvhbvq2otubfsc5gc8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmUAJgnu8D0cT8_pmLOTO-Z5SvRlfoOEU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918685966455-8rqdc8msad0u0dvhbvq2otubfsc5gc8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
