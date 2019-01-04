@@ -4,28 +4,22 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
-import  com.example.demas.friendlypassword.R.*;
-
-public class Register extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_login);
     }
-
     public void onClick(View v) {
-        TextView Back_Register = (TextView) findViewById(id.BackToMain_Register);
-        Back_Register.setOnClickListener(new View.OnClickListener() {
+        TextView Back_Login  = (TextView) findViewById(R.id.BackToMain_Login);
+        Back_Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Register.this, Main.class));
+                startActivity(new Intent(Login.this,Main.class));
             }
         });
-
     }
 }
