@@ -2,6 +2,7 @@ package com.example.demas.friendlypassword;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,6 +21,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 
 public class Register extends AppCompatActivity implements View.OnClickListener{
 
@@ -39,7 +41,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         PasswordRegister = (EditText) findViewById(R.id.PasswordRegister);
         PasswordRegisterConfirm = (EditText) findViewById(R.id.PasswordRegisterConfirm);
         EmailRegister = (EditText) findViewById(id.EmailRegister);
-        CreateAccountRegister = (Button) findViewById(id.CreateAccountRegister);
+        CreateAccountRegister = (Button) findViewById(R.id.CreateAccountRegister);
         CreateAccountRegister.setOnClickListener(this);
         progressDialog = new ProgressDialog(this);
     }
@@ -109,6 +111,18 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         }
         progressDialog.setMessage("The user is now registering...");
         progressDialog.show();
+
+        Runnable progressRunnable = new Runnable() {
+
+            @Override
+            public void run() {
+                progressDialog.cancel();
+            }
+        };
+
+        Handler pdCanceller = new Handler();
+        pdCanceller.postDelayed(progressRunnable, 3000);
+
         firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -116,11 +130,20 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
                 {
                     //successfully registered and logged in !
                     Toast.makeText(Register.this,"Successfully registered !",Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(Register.this,Login.class));
+
 
                 }
                 else
                 {
-                    Toast.makeText(Register.this,"Registered fail...",Toast.LENGTH_SHORT).show();
+                    if(task.getException() instanceof FirebaseAuthUserCollisionException)
+                    {
+                        Toast.makeText(Register.this, "Email already registered, try another valid email adress", Toast.LENGTH_LONG).show();
+                    }
+                    else
+                    {
+                        Toast.makeText(Register.this,task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                    }
 
                 }
             }

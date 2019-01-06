@@ -25,15 +25,15 @@
         tools:autoText="false" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/EmailLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
-        android:hint="Name*"
+        android:hint="Email*"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +43,7 @@
         app:layout_constraintVertical_bias="0.345" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/PasswordLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
