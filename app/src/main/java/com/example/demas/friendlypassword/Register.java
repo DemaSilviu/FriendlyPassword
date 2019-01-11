@@ -121,7 +121,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         };
 
         Handler pdCanceller = new Handler();
-        pdCanceller.postDelayed(progressRunnable, 3000);
+        pdCanceller.postDelayed(progressRunnable, 3000); // close progress bar in 3 seconds
 
         firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
@@ -158,9 +158,9 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
             startActivity(new Intent(Register.this, Main.class));
         }
 
-            if(view == CreateAccountRegister)
-            {
-                registerUser();
-            }
+        if(view == CreateAccountRegister)
+        {
+            registerUser();
+        }
     }
 }
