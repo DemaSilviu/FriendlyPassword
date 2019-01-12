@@ -95,6 +95,7 @@ public class Login extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful())
                 {
+                    finish(); // when press back button from phone (fix not to go back to login screen)
                     Intent intent = new Intent(Login.this,AplicationMenu.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
@@ -108,6 +109,7 @@ public class Login extends AppCompatActivity {
 
 
     }
+
     public void onClick(View view) {
         TextView Back_Login = (TextView) findViewById(R.id.BackToMain_Login);
         if(view == Back_Login)
