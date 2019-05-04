@@ -1,52 +1,45 @@
 {
   "project_info": {
-    "project_number": "918685966455",
-    "firebase_url": "https://friendlypasswod.firebaseio.com",
-    "project_id": "friendlypasswod",
-    "storage_bucket": "friendlypasswod.appspot.com"
+    "project_number": "175654354609",
+    "firebase_url": "https://friendlypassword.firebaseio.com",
+    "project_id": "friendlypassword",
+    "storage_bucket": "friendlypassword.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:918685966455:android:dc33dcd8b1776ccb",
+        "mobilesdk_app_id": "1:175654354609:android:dc33dcd8b1776ccb",
         "android_client_info": {
           "package_name": "com.example.demas.friendlypassword"
         }
       },
       "oauth_client": [
         {
-          "client_id": "918685966455-r5onmcqbhbt9tuvhn5lnfqdv8e0mvtid.apps.googleusercontent.com",
+          "client_id": "175654354609-kb6t8aeit1ubmsi2fc5ut2l19uui3nva.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.demas.friendlypassword",
-            "certificate_hash": "332a27db300546c06e3df8ef4ae9ca25f7c3b8e1"
+            "certificate_hash": "63b9ebb1347c66ee843498c84b918b238825831d"
           }
         },
         {
-          "client_id": "918685966455-8rqdc8msad0u0dvhbvq2otubfsc5gc8t.apps.googleusercontent.com",
+          "client_id": "175654354609-vl6h46l81kog9veghlphmjq6drlfmm04.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCmUAJgnu8D0cT8_pmLOTO-Z5SvRlfoOEU"
+          "current_key": "AIzaSyD0BSZGE8yxEYrGRNW5bS5rrQzIv8VuGzA"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "918685966455-8rqdc8msad0u0dvhbvq2otubfsc5gc8t.apps.googleusercontent.com",
+              "client_id": "175654354609-vl6h46l81kog9veghlphmjq6drlfmm04.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }

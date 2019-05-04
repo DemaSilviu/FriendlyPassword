@@ -3,6 +3,8 @@
     package="com.example.demas.friendlypassword">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".NewAccount"></activity>
+        <activity android:name=".MyAccounts" />
+        <activity android:name=".FriendlyPasswordActivity" />
         <activity android:name=".Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,8 +26,6 @@
         <activity android:name=".Register" />
         <activity android:name=".Login" />
         <activity android:name=".AplicationMenu" />
-        <activity android:name=".UserInformation" />
-        <activity android:name=".Sites"></activity>
     </application>
 
 </manifest>
