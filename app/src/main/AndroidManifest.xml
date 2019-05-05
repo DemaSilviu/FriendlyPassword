@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".NewAccount"></activity>
-        <activity android:name=".MyAccounts" />
+        <activity android:name=".MyAccounts"></activity>
         <activity android:name=".FriendlyPasswordActivity" />
         <activity android:name=".Main">
             <intent-filter>

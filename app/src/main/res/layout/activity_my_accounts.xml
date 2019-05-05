@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MyAccounts">
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/AccountsView"
+        android:layout_width="370dp"
+        android:layout_height="490dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

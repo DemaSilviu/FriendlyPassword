@@ -55,19 +55,6 @@ public class AplicationMenu extends AppCompatActivity {
             }
         });
     }
-    /*private void EditProfileClicked()
-    {
-        Button EditProfile = (Button) findViewById(R.id.EditProfile);
-        EditProfile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                startActivity(new Intent(AplicationMenu.this,UserInformation.class));
-            }
-        });
-
-    }
-    */
     @Override
     public void onBackPressed()
     {
